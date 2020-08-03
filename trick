@@ -1,2 +1,5 @@
 ./keymaster-1.7.0.darwin-amd64/keymaster -configHost=keymaster.brexapps.io -username=xsun
 ./cg-client.darwin-amd64 -baseURL https://cloud-gate.brexapps.io
+
+# find occupied port
+lsof -i :3000
