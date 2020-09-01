@@ -3,3 +3,7 @@
 
 # find occupied port
 lsof -i :3000
+
+Retool query:
+# notification audit
+select * from comms_notification_audit where notification_type = {{notificationType}} order by inserted_at desc limit 50
